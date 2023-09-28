@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="/static/login.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="login_form_container">
-        <form method="POST" action="/login">
-            <div class="login_form">
-                <h2>SingUp</h2>
+      <form method="post" action="/register">
+        <div class="login_form">
+          <h2>SingUp</h2>
 
-                <div class="input_group">
-                    <i class="fa fa-user"></i>
-                    <input type="text" id="email" placeholder="Email" class="input_text" autocomplete="off" />
-                </div>
+          <div class="input_group">
+            <i class="fa fa-user"></i>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
 
-                <div class="input_group">
-                    <i class="fa fa-user"></i>
-                    <input type="text" id="email" placeholder="Username" class="input_text" autocomplete="off" />
-                </div>
+          <div class="input_group">
+            <i class="fa fa-user"></i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
 
-                <div class="input_group">
-                    <i class="fa fa-unlock-alt"></i>
-                    <input type="password" id="password" placeholder="Password" class="input_text" autocomplete="off" />
-                </div>
+          <div class="input_group">
+            <i class="fa fa-unlock-alt"></i>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
 
-                <!-- <div class="input_group">
+          <!-- <div class="input_group">
                     <i class="fa fa-unlock-alt"></i>
                     <input type="password" placeholder="Confirm Password" class="input_text" autocomplete="off" />
                 </div> -->
 
-                <div class="button_group" id="login_button">
-                    <a type="/register">Sign Up</a>
-                </div>
-                
-            </div>
-        </form>
+          <button type="submit" class="button_group" id="login_button">
+            Login
+          </button>
+        </div>
+      </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/static/login.js"></script>
-</body>
-
+  </body>
 </html>
